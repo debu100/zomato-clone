@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Kanit', sans-serif; */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+#header {
+  background-color: #999;
+  background-image: url("../images/banner.avif");
+  padding-bottom: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  padding: 0 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.bordered-link {
+  text-decoration: underline #fff;
+  text-underline-offset: 17px;
+}
+
+.banner {
+  text-align: center;
+  /* padding: 180px 0; */
+}
+
+.banner h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  padding-top: 550px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.banner p {
+  color: #fff;
+  margin-top: 40px;
+}
+
+#slider,
+#about {
+  width: 100%;
+  margin: 90px 0;
+}
+
+.slider-container {
+  width: 1200px;
+  margin: auto;
+}
+
+.slider-container img {
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.slider-container .assort {
+  background-color: #ef4f5f;
+  color: #fff;
+  padding: 8px 19px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+}
+
+.slider-container .assort-2 {
+  color: #ef4f5f;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.slider-container span {
+  margin: 0 5px;
+  border: 1px solid #000;
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.slider-container h2 {
+  margin: 30px 0 20px 0;
+}
+
+.about-container {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 45px;
+}
+
+.about-box h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.about-box img {
+  border-radius: 8px;
+}
+
+.about-box hr {
+  border: none;
+  border-top-style: solid;
+  border-top-color: #ef4f5f;
+  border-top-width: 5px;
+  width: 17%;
+  margin-bottom: 20px;
+}
+
+#blog {
+  width: 100%;
+  margin: 70px 0;
+}
+
+.blog-container {
+  width: 1200px;
+  margin: auto;
+}
+
+.blog-container h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.blog-para {
+  margin: 10px 0 20px 0;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  gap: 40px;
+}
+
+.blog-box img {
+  margin-bottom: 15px;
+  /* height: 60%; */
+  /* making the height of all images equal.As all the images were of different height but it's exceeding the container's height */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.blog-box h3 {
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+#img-grid {
+  width: 100%;
+  margin: 70px 0;
+}
+
+.img-grid-container {
+  width: 1200px;
+  margin: auto;
+}
+
+.img-grid-container h2 {
+  margin: 150px 0 30px 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.img-grid-container img {
+  border-radius: 6px;
+  /* width: 100%; */
+  height: 100%;
+  /* making the height of all images equal. For eliminating the gap*/
+  object-fit: cover;
+}
+
+.img-grid-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.img-box1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.img-box2 {
+  grid-column: 3/-1;
+  grid-row: 1/2;
+}
+
+.img-box3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.img-box4 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.img-box5 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.img-box6 {
+  grid-column: 2/4;
+  grid-row: 3/5;
+}
+
+#footer {
+  width: 100%;
+  margin-top: 70px;
+  padding: 70px 0;
+  background-color: #f8f8f8;
+}
+
+#footer hr {
+  width: 80%;
+  margin: 60px auto 30px auto;
+}
+
+.footer-container {
+  width: 1200px;
+  margin: 20px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 10%;
+}
+
+.footer-grid {
+  width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  gap: 30px;
+}
+
+.footer-box h4 {
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.footer-box ul {
+  margin-top: 20px;
+}
+
+.footer-box ul li {
+  margin: 12px 0;
+  color: #696969;
+}
+
+.footer-box ul li:hover {
+  color: #1c1c1c;
+  cursor: pointer;
+}
+
+.footer-box i {
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 100%;
+  margin: 20px 4px 30px 4px;
+}
+
+.enterprise {
+  margin-top: 35px;
+}
+
+.footer-buttons button {
+  background-color: transparent;
+  border: 1px solid #696969;
+  border-radius: 6px;
+  padding: 10px 30px;
+}
+
+.footer-btn-1 {
+  margin-right: 15px;
+}
+
+.footer-images img {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.footer-para {
+  width: 1200px;
+  margin: auto;
+  color: #4f4f4f;
+  font-size: 14px;
+}
